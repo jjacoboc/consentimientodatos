@@ -1,0 +1,29 @@
+spring:
+ application:  
+  name: consentimiento-datos
+ 
+ datasource:
+  url: jdbc:mysql://suracorporativo.ctmgzzmk7exo.us-east-2.rds.amazonaws.com:3306/SuraCorporativo?autoReconnect=true&useSSL=false
+  username: masterDB
+  password: Suraperu1+
+   
+ jpa:    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+        id:
+          new_generator_mappings: false
+        hbm2ddl:
+          auto:  validate 
+    hibernate: 
+      ddl-auto: update
+   
+server:
+    servlet:
+      context-path: /datoscompartidos
+      
+parametro:
+  secretname: webapp-corporativo-sura/secrets
+  region: us-west-2      
+
+
+
